@@ -18,8 +18,12 @@ I would like to be able to save URLs and their title to Bookmark Manager
 ![Domain Model](https://imgur.com/a/IPJ183a)
 
 
-#To set up the database
+#To set up the databases
 1. Connect to psql
-2. Create database using psql command CREATE DATABASE bookmark_manager;
-3. Connect to database using psql command \c bookmark_manager
-4. Run script in /db/migrations/01_create_bookmarks_table.sql
+
+2. Create databases using psql commands:
+
+CREATE DATABASE bookmark_manager;
+CREATE DATABASE bookmark_manager_test;
+
+3. Setting up the tables: run the scripts in /db/migrations in order
